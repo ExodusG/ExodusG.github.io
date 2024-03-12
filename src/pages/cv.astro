@@ -1,0 +1,281 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+  <a class="btn mb-10" href="" download="/cv_quentin_lelan.pdf"> CV en pdf</a>
+  <div class="mb-10 text-justify">
+    Etudiant ingénieur informatique à l'ESIR (Rennes), je suis spécialisé dans les systèmes d'informations. J'aime et je voudrais faire du développement web. 
+    Je reste cependant curieux et intérrésé par différents domaines comme la data, le DevOps et la sécurité.
+  </div>
+  <div class="social-icons px-4 pb-5 pt-1 flex self-center justify-center sticky bottom-0">
+
+    <a
+    href="https://www.root-me.org/exodus-350259?lang=fr#880d88c4cb48ed59f23a7d8c3d4880f9"
+    target="_blank"
+    class="mx-3"
+    aria-label="Root me Profil"
+    title="Root me Profil"
+>
+<img src="/rootme.svg" height="50" width="50" alt="">
+    
+</a>
+    <a href="https://github.com/ExodusG" target="_blank" class="mx-3" aria-label="Github" title="Github">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            style="fill: currentColor;transform: ;msFilter:;"
+            ><path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+            ></path>
+        </svg>
+    </a>
+</div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Formation</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Diplôme ingénieur informatique, système d'information"
+      subtitle="2021-2024 | ESIR, Rennes"
+    />
+    <TimeLineElement
+      title="DUT informatique, génie logiciel"
+      subtitle="2019-2021 | IUT, Vannes"
+    />
+    <TimeLineElement
+    title="BAC S section européenne mention bien"
+    subtitle="2018-2019 | Lycée Sainte-Anne d'Auray, Sainte-Anne d'Auray"
+  />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Stagiaire développeur web"
+      subtitle="juin - septembre 2023 | Dreamstore SA, Genève"
+    >
+    En tant que développeur web j’ai été amené à développer des extensions ou modifier des comportement d’un shop en ligne Prestashop. J’ai aussi été amené à développer un middleware pour gérer la communication entre les API de Slack, Shopify et la base de données. Dans un dernier temps j’ai mis en place de la qualité de code (CI/CD, pipeline Jenkins, test E2E avec Cypress, phpStan, phpCS). Tout cela à été fait en méthode Kanban. 
+    </TimeLineElement>
+    <TimeLineElement
+      title="Stagiaire testeur Symfony"
+      subtitle="juin-juillet 2022 | 6TM, Rennes"
+    >
+    Intégrer dans une équipe Agile j’avais pour missions de faire l’état de l’art des différentes méthodes de test E2E compatible avec Symfony. Cerla en prenant en compte les contraintes de temps d'exécution, de facilité de mise en place et syntaxe. J’ai aussi été initié à la méthode DevOps et aux bonnes pratiques en entreprise. 
+    </TimeLineElement>
+    <TimeLineElement
+      title="Développeur web"
+      subtitle="Auto-entrepreneur / freelance | depuis 2021"
+    >
+    Je mets en place des sites vitrines sur mesure en PHP/CSS/HTML/JS ou en wordpress. Je m’occupe de l'hébergement et du nom de domaine, je gère aussi le référencement, contenu SEO et fiche Google. 
+    </TimeLineElement>
+    <TimeLineElement
+    title="Développeur web"
+    subtitle="Juliana Multimédia | juillet 2021"
+  >
+  </TimeLineElement>
+    <TimeLineElement
+    title="Stagiaire développeur web"
+    subtitle="Juliana Multimédia | avril-juin 2021"
+  >
+  Intégré en tant que stagiaire développeur web, j’ai eu pour mission de développer différents sites en PHP/HTML/CSS/JS avec un framework interne. J’ai donc fait principalement du front mais aussi un peu de back.
+  </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      TOEC 875 (B2)
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Compétences</div>
+  </div>
+
+  <div class="mb-2">
+    <div class="text-2xl w-full">Web</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>Wordpress</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>PHP</li>
+    <li>JS</li>
+    <li>Symfony</li>
+    <li>Twig</li>
+    <li>Ajax</li>
+    <li>NestJS</li>
+    <li>API REST</li>
+    <li>Angular</li>
+    <li>TS</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">Base de données</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>SQL</li>
+    <li>PL/SQL</li>
+    <li>SQLITE3</li>
+    <li>MongoDB</li>
+    <li>MySQL</li>
+    <li>PySPARK</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">Réseau</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>TCP/IP</li>
+    <li>DNS</li>
+    <li>DHCP</li>
+    <li>NGINX</li>
+    <li>Apache</li>
+    <li>Cisco</li>
+    <li>SSH</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">Génie logiciel</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>UML</li>
+    <li>JUnit</li>
+    <li>Ant</li>
+    <li>Patron de conception</li>
+    <li>Git</li>
+    <li>Test</li>
+    <li>Docker</li>
+    <li>Jenkins</li>
+    <li>Cypress</li>
+    <li>Pipeline</li>
+    <li>Qualité de code</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">Langages de programmation</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>Java</li>
+    <li>Python</li>
+    <li>Assembleur x86</li>
+    <li>C++</li>
+    <li>Shell</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">Développement mobile</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>Android natif</li>
+    <li>Application cordova</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">IA</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-5">
+    <li>Machine learning</li>
+    <li>Deep learning</li>
+    <li>LLM</li>
+  </ul>
+  <div class="mb-2">
+    <div class="text-2xl w-full">Cybersécurité</div>
+  </div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6 mb-10">
+    <li>Faille XSS</li>
+    <li>CSRF</li>
+    <li>Injection SQL</li>
+    <li>Firewall</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Autre experience</div>
+  </div>
+  <div class="time-line-container mb-5">
+    <TimeLineElement
+    title="Projet industriel ESIR"
+    subtitle=""
+  >
+  Recherche autour de la génération de texte sous-contrainte depuis le papier de recherche : <a href='https://aclanthology.org/2022.naacl-main.215/' class="underline" target='_blank'> PPL-MCTS: Constrained Textual Generation Through Discriminator-Guided MCTS Decoding </a>
+</TimeLineElement>
+</div>
+<div class="time-line-container mb-5">  
+  <TimeLineElement
+    title="Projet borne électrique"
+    subtitle=""
+  >
+  Récupération du dataset des bornes de recharge, nettoyage du dataset, placement sur une map, ajout de statistiques. Projet réalisé en mode scrum sur une équipe de 5 personnes. Le front est en Angular, le back est en Spring. <a href='https://github.com/ESIR2-PROJECT/FRONTEND' class="underline" target='_blank'> Lien Github </a> 
+  </TimeLineElement>
+  </div>
+  <div class="time-line-container mb-5">
+    <TimeLineElement
+    title="Projet ASTEP"
+    subtitle=""
+  >
+  Sensibilisation à l’informatique pour les élèves de primaire, création d'activité et explication de concept simple (école Beaupré Lalande Vannes).
+  </TimeLineElement>
+  </div>
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+    title="Projet synthèse DUT"
+    subtitle=""
+  >
+  Réalisation d’un site web (jeu de math) en Symfony (PHP) à la demande de M. Frédéric Le Mellec (enseignant de collège) avec un back-office pour gérer les questions ainsi que le jeu. Le front est pour les élèves, faire les QCM et les attaques de chateau
+  </TimeLineElement>
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Centres d'intérêt</div>
+  </div>
+  <div class="time-line-container mb-5">
+    <TimeLineElement
+    title="Savate Boxe Française"
+    subtitle="Depuis 2012"
+  >
+  Pratique de la Savate Boxe Française niveau gant blanc (Champion de Bretagne étudiant -60kg 2023)
+</TimeLineElement>
+</div>
+<div class="time-line-container mb-5">
+  <TimeLineElement
+  title="Chargé de communication"
+  subtitle="Depuis 2019"
+>
+Chargé de communication de l'ES Plescop SBF, notamment du Facebook & du site internet
+</TimeLineElement>
+</div>
+<div class="time-line-container mb-5">
+  <TimeLineElement
+  title="Responsable culture BDE ESIR"
+  subtitle="2022"
+>
+ Création d'évènement (l'ESIR a un incroyable talent) en 2022 et 2023, rédaction de recommandation culturelle pour les étudiants,...
+</TimeLineElement>
+</div>
+<div class="time-line-container mb-5">
+  <TimeLineElement
+  title="Formation de Jeune Sapeur Pompier"
+  subtitle="2017-2019"
+>
+
+</TimeLineElement>
+</div>
+<div class="time-line-container mb-5">
+  <TimeLineElement
+  title="Présentation de tutorats pour les étudiants"
+  subtitle=""
+>
+Présentation de tutorats dans les matières informatiques à l'intention des étudiants de l'ESIR
+</TimeLineElement>
+</div>
+</BaseLayout>

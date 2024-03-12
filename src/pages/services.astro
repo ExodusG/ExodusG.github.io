@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="services">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Mes services</div>
+  </div>
+  <div class="py-2">
+    <text class="text-lg">
+      En tant qu'auto-entrepreneur/freelance, je suis disponible pour différents services. Que ce soit auprès d'agences web ou bien d’ESN, je suis à disposition pour différents types de missions, principalement dans le développement web.
+<br>Je suis aussi à disposition des clients directs pour créer un site web vitrine avec gestion de contenu SEO, création d’une fiche Google et gestion du nom de domaine et de l’hébergement.
+    </text>
+  </div>
+  <HorizontalCard
+    title="ES Plescop SBF"
+    img="/logo.png"
+    desc="Création d'un site web responsive pour l'association sportive ES Plescop SBF, gestion de référencement naturel et création d'une fiche Google."
+    badge="NEW"
+    url="https://www.es-plescop-sbf.fr/"
+  />
+  <!-- <div class="divider my-0"></div> -->
+  
+</BaseLayout>
