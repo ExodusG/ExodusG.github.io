@@ -1,0 +1,33 @@
+---
+const { title, img,year,rating,dateWatch , url, target = "_blank" } = Astro.props;
+import { Image } from "astro:assets";
+
+const getStarRating = (rating) => {
+        if (!rating) return null;
+        const fullStars = Math.floor(rating);
+        const hasHalfStar = rating % 1 >= 0.5;
+
+        return '★'.repeat(fullStars) + (hasHalfStar ? '½' : '');
+    };
+---
+
+<a href={url} target={target} class="block">
+  <div class="card bg-base-100 h-full transition ease-in-out hover:shadow-xl hover:scale-[102%]">
+    <Image
+      width={750}
+      height={350}
+      format="webp"
+      src={img}
+      alt={title}
+      class="w-full h-80 object-contain bg-gray-100 rounded-t-2xl"
+    />
+    <div class="card-body">
+        <h2 class="card-title">{title}</h2>
+        <p>{year}</p>
+        <div class="flex items-center gap-4 mt-2">
+            <p>{dateWatch}</p>
+            <p class="text-xs">{getStarRating(rating)}</p>
+        </div>
+    </div>
+  </div>
+</a>

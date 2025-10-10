@@ -1,0 +1,30 @@
+---
+const { title, img,artist , url, target = "_blank" } = Astro.props;
+import { Image } from "astro:assets";
+
+---
+
+<a href={url} target={target} class="block h-full group">
+  <div class="relative card bg-base-100 h-full transition ease-in-out hover:shadow-xl hover:scale-[102%] rounded-lg overflow-hidden">
+    {img && (
+      <Image
+        src={img}
+        width={750}
+        height={422}
+        format="webp"
+        alt={title}
+        class="w-full aspect-square object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
+      />
+    )}
+
+    <!-- Overlay au survol -->
+    <div
+      class="absolute inset-0 flex flex-col items-center justify-center 
+             bg-black/60 opacity-0 group-hover:opacity-100 
+             transition-opacity duration-300 text-white text-center p-4"
+    >
+      <h3 class="text-xs font-semibold">{title}</h3>
+      {artist && <p class="text-xs mt-1">{artist}</p>}
+    </div>
+  </div>
+</a>
