@@ -8,7 +8,6 @@ export const parserLastfm=new Parser({
     ]
   }
 });
-//32dd347a866c93006e15402cccd5b9fb
 
 export async function GET() {
     try {

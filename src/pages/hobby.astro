@@ -3,8 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import MovieCard from "../components/MovieCard.astro";
 import AlbumCard from "../components/AlbumCard.astro";
 
-const baseURL = new URL(Astro.request.url).origin;
-
+//const baseURL = new URL(Astro.request.url).origin;
+const baseURL = "https://ExodusG.github.io";
 const res = await fetch(baseURL+'/api/letterboxd.json');
  var movies : any;
   var artists : any;
