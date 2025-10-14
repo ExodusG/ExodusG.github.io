@@ -11,9 +11,8 @@ export const parserLastfm=new Parser({
 
 export async function GET() {
     try {
-        const LASTFM_API_KEY=import.meta.env.LASTFM_API_KEY;
+        const LASTFM_API_KEY=import.meta.env.PUBLIC_LASTFM_API_KEY;
         const username="exodus56_";
-        console.log(LASTFM_API_KEY)
             const topAlbum= await Promise.all([
       fetch(`http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${username}&api_key=${LASTFM_API_KEY}&format=json&period=6month&limit=30`)
     ]);
