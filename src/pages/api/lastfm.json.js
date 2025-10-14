@@ -21,7 +21,7 @@ export async function GET() {
 
         return Response.json({
             topalbum:{
-                album:topAlbumData.topalbums.album.map(album=>(
+                album:topAlbumData?.topalbums?.album?.map(album=>(
                     {
                         name:album.name,
                         image:album.image[2],
