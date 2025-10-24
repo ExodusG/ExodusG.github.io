@@ -2,18 +2,21 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import MovieCard from "../components/MovieCard.astro";
 import AlbumCard from "../components/AlbumCard.astro";
+import artists from "../data/lastfm.json"
+import movies from "../data/letterboxd.json"
 
 //const baseURL = new URL(Astro.request.url).origin;
-const baseURL = "https://ExodusG.github.io";
-const res = await fetch(baseURL+'/api/letterboxd.json');
- var movies : any;
-  var artists : any;
-if(await res.status == 200){
-  movies = await res.json();
-  movies=movies.slice(0,15);
-  const resLAstFm = await fetch(baseURL+'/lastfm.json');
-  artists = await resLAstFm.json();
-}
+//const baseURL = "https://ExodusG.github.io";
+// const res = await fetch('https://ExodusG.github.io/api/letterboxd.json');
+//  var movies : any;
+//   var artists : any;
+// if(await res.status == 200){
+//   movies = await res.json();
+//   movies=movies.slice(0,15);
+//   console.log(JSON.stringify(movies))
+  //const resLAstFm = await fetch(baseURL+'/api/lastfm.json');
+ // artists = await resLAstFm.json();
+//}
 ---
 
 <BaseLayout title = "hobby" sideBarActiveItemID="hobby">
